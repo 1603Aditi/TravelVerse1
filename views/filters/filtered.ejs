@@ -1,0 +1,20 @@
+<% layout("/layouts/boilerplate") %>
+<body>  
+<div class="row row-cols-lg-3 row-cols-md-3 row-cols-sm-1 mt-3">
+    <% if (listings.length === 0) { %>
+    <p>No listings found for this filter.</p>
+<% } else { %>
+            <% for (let l of listings){ %>
+            <a href="/listings/<%= l._id %>" class="listing-link">
+            <div class="card col listing-card" style="width: 22.5rem;">
+                <img src="<%= l.image.url %>" class="card-img-top" alt="listing imge" style="height: 20rem;">
+                    <div class="card-img-overlay"></div>
+                <div class="card-body">
+                  <p class="card-text"><b><%= l.title %></b><br>₹<%= l.price.toLocaleString("en-IN")%> / night
+                  <i class="tax-info">&nbsp+18% GST</i></p>
+                </div>
+              </div>
+            </a>
+            <% } %>
+    <% } %>
+      </div>

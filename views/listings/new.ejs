@@ -1,0 +1,98 @@
+<% layout("/layouts/boilerplate") %>
+<style>
+  .dropdown{
+    border-radius: 25px;
+  }
+  .drop-down option{
+    color:gray;
+  }
+  #category{
+    border-color: rgb(208, 204, 204);
+    border-radius: 5px;
+    color: rgb(77, 77, 77);
+  }
+</style>
+<br>
+<div class="row">
+    <div class="col-8 offset-2">
+<body> 
+    <h3>Create new listing</h3>
+    <br>
+    <form method="POST" action="/listings" novalidate class="needs-validation" enctype="multipart/form-data">
+        <div class="mb-3">
+            <label for="title" class="form-label">Title</label>
+            <input name="listing[title]" placeholder="enter title" type="text" class="form-control" required>
+            <div class="valid-feedback">
+                Nailed the title! 
+              </div>
+              
+              <div class="invalid-feedback">
+                What should we call your place? Add a title!
+              </div>
+              
+        </div>
+        <div class="mb-3">
+            <label for="description" class="form-label">Description</label>
+            <textarea name="listing[description]" class="form-control"required></textarea>
+            <div class="invalid-feedback">
+                Don't leave it blank — tell us about your place!
+              </div>
+              
+        </div>
+        <div class="mb-3">
+            <label for="image" class="form-label">Upload Listing Image </label>
+            <input name="listing[image]" type="file"class="form-control" required>
+        </div>
+        <div class="row">
+        <div class="mb-3 col-md-6">
+            <label for="price" class="form-label">Price</label>
+            <input name="listing[price]" placeholder="enter price" type="Number"class="form-control"required>
+            <div class="valid-feedback">
+                Sweet deal! This looks awesome.
+              </div>
+              <div class="invalid-feedback">
+                Every great place deserves a price tag!
+              </div>
+              
+        </div>
+       <div class="mb-3 col-md-6">
+            <label for="location" class="form-label">Location</label>
+            <input name="listing[location]" placeholder="enter location"type="text"class="form-control"required>
+            <div class="invalid-feedback">
+                Hmm...That doesn't seem like a valid place on Earth.
+              </div>
+       </div>
+    </div>
+       <div class="mb-3">
+            <label for="country" class="form-label">Country</label>
+            <input name="listing[country]" placeholder="enter country"type="text"class="form-control"required>
+            <div class="invalid-feedback">
+                "Oops! That doesn't look like a real country."
+              </div>
+       </div>
+       <div class="drop-down">
+       <label for="category">Category &nbsp &nbsp</label>
+        <select name="listing[category]" id="category">
+        <option value="trending">Trending</option>
+        <option value="rooms">Rooms</option>
+        <option value="iconic-cities">Iconic cities</option>
+        <option value="mountain">Mountain</option>
+        <option value="castles">Castles</option>
+        <option value="amazing-pools">Amazing pools</option>
+        <option value="camping">Camping</option>
+        <option value="farms">Farms</option>
+        <option value="arctic">Arctic</option>
+        <option value="boat-house">Boat-House</option>
+        <option value="in-woods">In Woods</option>
+    </select>
+    </div>
+       <br><br>
+       <div>
+        <button class="btn btn-dark add-btn">Add</button>
+    </div>
+    </form>
+    <br>
+    <br><br>
+</body>
+</div>
+</div>
