@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Travelverse: Explore, Book, Travel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1682905926517-6be3768e29f0?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat left ;
+      background-size: cover;
+      color: rgb(245, 244, 244);
+      padding: 120px 0;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    #started{
+        color:white;
+        background-color:rgb(241, 61, 61);
+        text-align:center;
+        border-radius: 10px;
+        padding: 10px;
+        margin-left: 9%;
+        border: none;
+        
+    }
+    #started:hover{
+       background-color:rgb(238, 21, 21); 
+    }
+    
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    &nbsp &nbsp &nbsp
+      <a class="navbar-brand" href="/listings" style="color: rgb(255, 0, 38);"><i class="fa-regular fa-compass"></i></a>
+      <a class="navbar-brand fw-bold" href="/listings" style="color: rgb(255, 0, 38);"><b>TRAVELVERSE</b></a>
+      
+      <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="/"><b>Home</b></a></li>
+          <li class="nav-item"><a class="nav-link" href="/listings"><b>Destinations</b></a></li>
+          <li class="nav-item"><a class="nav-link" href="/login"><b>Become a Host</b></a></li>
+          <li class="nav-item"><a class="nav-link" href="/login"><b><u>Login</u></b></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="hero">
+    <div class="container">
+      <h1>Assemble Your Adventures</h1>
+      <p>Only on Travelverse...</p>
+      <p class="lead mb-4">Explore stays, villas, and more across the globe</p>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <!-- <input type="text" class="form-control form-control-lg" placeholder="Search destinations..."> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4"><B>Popular Destinations</B></h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+        <div class="card h-100  shadow-sm">
+        <img src="https://images.unsplash.com/photo-1702053285107-b5a90aa97171?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Kashmir">
+        <div class="card-body">
+          <h5 class="card-title">Kashmir</h5>
+          <p class="card-text">Heaven on Earth with snow-capped mountains and lakes.</p>
+        </div>
+        </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Paris">
+            <div class="card-body">
+              <h5 class="card-title">Paris, France</h5>
+              <p class="card-text">Romantic getaways and historic sights</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="https://plus.unsplash.com/premium_photo-1677829177642-30def98b0963?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Bali">
+            <div class="card-body">
+              <h5 class="card-title">Bali, Indonesia</h5>
+              <p class="card-text">Tropical escapes and beachfront villas</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="https://plus.unsplash.com/premium_photo-1714051660720-888e8454a021?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="New York">
+            <div class="card-body">
+              <h5 class="card-title">New York, USA</h5>
+              <p class="card-text">City skyline and fast-paced adventures</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+      <div class="card h-100 shadow-sm">
+        <img src="https://plus.unsplash.com/premium_photo-1661914240950-b0124f20a5c1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Tokyo">
+        <div class="card-body">
+          <h5 class="card-title">Tokyo</h5>
+          <p class="card-text">A futuristic city blending tradition with technology.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm">
+        <img src="https://plus.unsplash.com/premium_photo-1697729914552-368899dc4757?q=80&w=2012&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Dubai">
+        <div class="card-body">
+          <h5 class="card-title">Dubai</h5>
+          <p class="card-text">Luxury, innovation, and desert adventures await.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm">
+        <img src="https://images.unsplash.com/photo-1505977003557-c907eece08e3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Jaipur">
+        <div class="card-body">
+          <h5 class="card-title">Jaipur</h5>
+          <p class="card-text">The Pink City full of palaces, forts, and heritage.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+  <div class="card h-100 shadow-sm">
+    <img src="https://plus.unsplash.com/premium_photo-1661963145672-a2bd28eba0fb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8c2FudG9yaW5pfGVufDB8fDB8fHww" class="card-img-top" alt="Santorini">
+    <div class="card-body">
+      <h5 class="card-title">Santorini</h5>
+      <p class="card-text">A stunning Greek island with whitewashed houses and blue domes.</p>
+    </div>
+  </div>
+</div>
+<div class="col-md-4">
+  <div class="card h-100 shadow-sm">
+    <img src="https://images.unsplash.com/photo-1554280678-c139e7e9a5d6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Cape Town">
+    <div class="card-body">
+      <h5 class="card-title">Cape Town</h5>
+      <p class="card-text">South Africa's coastal beauty with Table Mountain and beaches.</p>
+    </div>
+  </div>
+</div>
+      </div>
+    </div>
+    <br>
+    <hr>
+  </section>
+
+  <!-- How it Works -->
+  <section class="py-5">
+    <div class="container text-center">
+      <h2 class="mb-4"><b>How It Works</b></h2><hr><br> <br>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <h5 ><B> Search</B></h5>
+          <p><i>Find the perfect stay by browsing listings worldwide.</i></p>
+        </div>
+        <div class="col-md-4">
+          <h5> <B>Book</B></h5>
+          <p><i>Secure your stay with instant confirmation.</i></p>
+        </div>
+        <div class="col-md-4">
+          <h5><B>Travel</B></h5>
+          <p><i>Enjoy your trip and create unforgettable memories.</i></p>
+        </div>
+      </div>
+      <br>
+      <hr>
+    </div>
+  </section>
+ <br>
+ <br>
+  <a href="/login"><button id="started" >GET STARTED</button></a>
+
+  <br><br>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4 text-center">
+    <p class="mb-1">&copy; 2025 Travelverse. All rights reserved.</p>
+    <div>
+      <a href="#" class="text-light me-3">About</a>
+      <a href="#" class="text-light me-3">Contact</a>
+      <a href="#" class="text-light">Privacy</a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

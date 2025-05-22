@@ -73,6 +73,10 @@ app.use((req,res,next)=>{
     next();
 });
 
+app.get("/",(req,res)=>{
+    res.render("front.ejs");
+});
+
 app.get("/listings/search", async (req, res) => {
   console.log("yes");
   const { query } = req.query;
